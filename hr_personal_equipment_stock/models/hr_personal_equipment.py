@@ -66,7 +66,7 @@ class HrPersonalEquipment(models.Model):
         """
         return {
             "group_id": group_id or self.procurement_group_id.id or False,
-            "partner_id": self.employee_id.user_id.partner_id.id,
+            # "partner_id": self.employee_id.user_id.partner_id.id,
             "personal_equipment_id": self.id,
         }
 
